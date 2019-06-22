@@ -185,6 +185,15 @@
                  <span class="old-price">30500 Р.</span>
                 <div class="btn">12500 Р.</div >
             </article>
+            <div class="modal-add-product">
+                <span class="modal-icon"></span>
+                <span>Товар добавлен в корзину!</span>
+                <button class="close-modal-buy" type="button" title="Закыть"></button>
+                <div class="add-product-buttons">
+                    <a href="#ordering" class="btn active-btn">Оформить заказ</a>
+                    <a href="#" class="btn">Продолжиь покупки</a>
+                </div>
+            </div>
         </section>
           <div class="popular-firm clearfix">
             <span>Популярные производители:</span>
@@ -276,7 +285,31 @@
                    <a href="#" class="maps js-map">
                        <img src="img/map.jpg" alt="google-map" width="300" height="158">
                        </a>
+                       <div class="map-modal">
+                           <button class="modal-close-map" type="button" title="Закыть"></button>
+                           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651586!2d30.320894616097!3d59.938794181876254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1561236640657!5m2!1sru!2sru" width="940" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                       </div>
                    <a href="#" class="btn js-write-us">Заблудились? Напишите нам!</a>
+                   <div class="write-us-modal">
+                       <button class="modal-write-close" type="button" title="Закрыть"></button>
+                       <form action="#" method="post" class="write-us-form">
+                           <div class="form-answer">
+                               <label for="name">
+                               <span>Ваше имя:</span><br>
+                               <input type="text" name="name" placeholder="Представьтесь, пожалуйста" onfocus="placeholder="";" onblur='placeholder="Представьтесь, пожалуйста";'>
+                               </label>
+                                 <label for="email">
+                               <span>Ваше e-mail:</span><br>
+                               <input type="text" name="email" placeholder="Для отправки ответа" onfocus="placeholder="";" onblur='placeholder="Для отправки ответа";'>
+                               </label>
+                               <span>Текст письма:</span>
+                               <textarea name="textletter" cols="61" rows="6" placeholder="В свободной форме" onfocus="placeholder="";" onblur="placeholder='В свободной форме';"></textarea>
+                           </div>
+                           <div class="form-btn">
+                               <button type="submit" class="btn">Отправить</button>
+                           </div>
+                       </form>
+                   </div>
                     </div>
                 </section>
             </div>

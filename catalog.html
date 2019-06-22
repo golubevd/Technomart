@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style/fonts.css">
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class="catalog-page">
    <header class="main-header">
        <div class="header-up ">
           <div class="wrapper clearfix">
@@ -109,7 +109,7 @@
                          <ul class="firms-list">
                              <li>
                              <input type="checkbox" id="ch1" value="Bosh" checked="" name="firm1">
-                             <label for="ch1">Bosh</label>
+                             <label for="ch1">Bosch</label>
                              </li>
                              <li>
                              <input type="checkbox" id="ch2" value="Interscol" name="firm2">
@@ -152,7 +152,7 @@
                    <span>Сортировка:</span>
                    <ul class="sort-by">
                         <li>
-                          <a href="#" class="by-price">По цене</a>  
+                          <a href="#" class="by-price sort-by-active">По цене</a>  
                         </li>
                         <li>
                           <a href="#" class="by-type">По Типу</a>  
@@ -162,11 +162,11 @@
                         </li>
                     </ul> 
                    <div class="sort-btn">
-                       <a href="#" class="sort-up">По возрастанию</a>
+                       <a href="#" class="sort-up active">По возрастанию</a>
                        <a href="#" class="sort-down">По убыванию</a>
                    </div>
                </div>                              
-               <div class="catalog our-drill">               
+               <div class="catalog catalog-drill">               
                  <article class="drill">
                 <div class="drill-actions">
                     <a href="#" class="buy js-buy">Купить</a>
@@ -223,7 +223,7 @@
                 <span class="old-price">25500 Р.</span>
                 <div  class="btn">15500 Р.</div >
             </article>
-             <article class="drill">
+             <article class="drill new">
                 <div class="drill-actions">
                     <a href="#" class="buy js-buy">Купить</a>
                     <a href="#" class="in-bookmark">В закладки</a>
@@ -237,7 +237,7 @@
                 <span class="old-price">30500 Р.</span>
                 <div  class="btn">25500 Р.</div >
             </article>
-             <article class="drill new">
+             <article class="drill">
                 <div class="drill-actions">
                     <a href="#" class="buy js-buy">Купить</a>
                     <a href="#" class="in-bookmark">В закладки</a>
@@ -251,7 +251,7 @@
                  <span class="old-price">30500 Р.</span>
                 <div class="btn">12500 Р.</div >
             </article>
-            <article class="drill">
+            <article class="drill new">
                 <div class="drill-actions">
                     <a href="#" class="buy js-buy">Купить</a>
                     <a href="#" class="in-bookmark">В закладки</a>
@@ -279,7 +279,7 @@
                 <span class="old-price">30500 Р.</span>
                 <div  class="btn">25500 Р.</div >
             </article>
-             <article class="drill new">
+             <article class="drill">
                 <div class="drill-actions">
                     <a href="#" class="buy js-buy">Купить</a>
                     <a href="#" class="in-bookmark">В закладки</a>
@@ -296,10 +296,19 @@
         </div>
                <div class="pages">
                    <a href="#1" class="previous active-page">1</a>
-                   <a href="#2">2</a>
-                   <a href="#3">3</a>
+                   <a href="#2" class="previous">2</a>
+                   <a href="#3" class="previous">3</a>
                    <a href="#next" class="following">Следующая</a>
-               </div>                
+               </div> 
+               <div class="modal-add-product">
+                <span class="modal-icon"></span>
+                <span>Товар добавлен в корзину!</span>
+                <button class="close-modal-buy" type="button" title="Закыть"></button>
+                <div class="add-product-buttons">
+                    <a href="#ordering" class="btn active-btn">Оформить заказ</a>
+                    <a href="#" class="btn">Продолжиь покупки</a>
+                </div>
+            </div>               
             </section>
         </div>
         <article class="about">
