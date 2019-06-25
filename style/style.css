@@ -1395,6 +1395,10 @@ p.aditional-text{
     background-color: #ee3643;
 }
 
+.user-block__login{
+    position: relative;
+}
+
 .user-info{
     position: relative;
      display: block;
@@ -1422,24 +1426,25 @@ p.aditional-text{
     filter: alpha(opacity=50);    
 }
 
-.user-info::after{
+.user-info--logout {
    position: absolute;
     content: "";
     width: 20px;
     height: 20px;
+    font-size: 0;
     background: url("../img/logout-icon.png") no-repeat;
-    top:13px;
+    bottom: 18px;
     right: 10px;
     opacity: .5;
     filter: alpha(opacity=50);  
 }
 
-.user-info:hover::before,.user-info:hover::after{
+.user-info:hover::before,.user-info--logout:hover{
   opacity: 1;
   filter: alpha(opacity=100);    
 }
 
-.user-info:active, .user-info:active::before,.user-info:active::after{
+.user-info:active, .user-info--logout:active,.user-info:active::after{
    opacity: .3;
   filter: alpha(opacity=30); 
 }
