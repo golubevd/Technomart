@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 (function () {
 
@@ -12,9 +12,7 @@
     let closeMap = document.querySelector('.modal-close-map');
     let closeBuy = document.querySelector('.close-modal-buy');
     let closeWrite = document.querySelector('.modal-write-close');
-    let storage = localStorage.getItem('name');
-
-
+    
     const openModal = function (modalName, classToAdd) {
         if (!modalName.classList.contains(classToAdd)) {
             modalName.classList.add(classToAdd);
